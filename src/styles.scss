@@ -5,3 +5,14 @@
 // body {
 //     color: $text-color;
 // }
+.ct_logo{
+    width: 25px;
+}
+.ct_header {
+    li {
+        cursor: pointer;
+    }
+    li:focus {
+        outline: none;
+    }
+} 

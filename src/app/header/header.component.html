@@ -1,3 +1,19 @@
-<nav class="navbar fixed-top navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">Fixed Top</a>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ct_header">
+    <a class="navbar-brand" routerLink="/">
+        <img class="ct_logo" src="../../assets/logo.png" alt="Crypto Tracker">
+        <span>Crypto Tracker</span>
+    </a>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item" [routerLink]="['/cmc']" routerLinkActive="active">
+            <a class="nav-link">CoinMarketCap</a>
+        </li>
+        <li class="nav-item" [routerLink]="['/bnb']" routerLinkActive="active">
+            <a class="nav-link">Binance</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+            <a class="nav-link">Login</a>
+        </li>
+    </ul>
 </nav>
